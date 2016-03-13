@@ -36,6 +36,8 @@ gulp.task('build', function() {
     'images/**/*'
   ]).pipe(gulp.dest('dist/images'));
 
+  gulp.src(['attachments/faq.pdf']).pipe(gulp.dest('dist/attachments'));
+
   gulp.src(['bower_components/github-fork-ribbon-css/gh-fork-ribbon.css']).pipe(
     gulp.dest('dist/css')
   )
