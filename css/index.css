@@ -1,0 +1,70 @@
+.card-login {
+  margin: 0 auto;
+  margin-top: 10%
+}
+.profile {
+  padding: 16px 40px
+}
+.profile-picture {
+  border-radius: 100%;
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.chart {
+  padding: 20px;
+  overflow: scroll;
+}
+.chart-content {
+  margin: 0 auto;
+}
+.chart-title {
+  color: "#333";
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.attachments-table {
+  width: 100%;
+}
+
+.mygrade-card.mdl-card {
+  width: 100%;
+}
+.mygrade-card > .mdl-card__title {
+  color: #fff;
+}
+
+.attachments-card > .mdl-card__title {
+  color: #fff;
+}
+.attachments-card > .mdl-card__supporting-text {
+  margin: 0 auto;
+}
+
+.logout-button{
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+}
+
+span#ggEquiv{
+  color: #ff9800
+}
+span#ggDesc {
+  color: #ff9800
+}
+
+.right{
+  text-align: right;
+}
+
+.wait {
+  visibility: hidden;
+}
+
+.lovedev{
+  margin-top: 20px;
+}
