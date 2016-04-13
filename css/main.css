@@ -1,0 +1,183 @@
+/*
+MyGrade - Grade Viewer App
+@version v1.0
+@author Mark Joseph J. Solidarios | Part-time faculty | WVSU - IICT
+@link*/
+
+.login-box{
+	align-items: center;
+  justify-content: center;
+}
+.mdl-layout__content {
+	padding: 24px;
+	flex: none;
+}
+
+.expand{
+  width: 100%
+}
+
+.right {
+  text-align: right;
+}
+
+.highlight{
+  font-weight: bold;
+}
+
+.profile{
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+    background: url("../images/profile-bg.jpg") center/cover;
+}
+
+.profile-picture{
+  border-radius: 100%;
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.white-text{
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.logout-button {
+  width: 100%
+}
+
+.error{
+  color: red;
+}
+
+.grading-guide {
+  color: #fff;
+  background-color:  #607d8b;
+    padding: 30px;
+}
+
+.grading-guide-table{
+  width: 100%;
+}
+
+
+.grading-summary {
+  color: #fff;
+  background-color:  #ffb300;
+    padding: 30px;
+}
+
+.grading-summary-table{
+  width: 100%;
+}
+
+td#summary_grade, td#summary_grade_equiv, td#summary_grade_desc{
+  font-weight: bold;
+}
+
+.no-error{
+  color:  #009688
+}
+
+.mdl-card__supporting-text>h5{
+  margin-bottom: 20px;
+}
+
+.highlight{
+  font-weight: bold;
+}
+
+div.spacer{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cards {
+  max-width: 900px;
+  padding: 0;
+}
+.mdl-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.mdl-card__title {
+  padding: 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.mdl-card__media {
+  box-sizing: border-box;
+  background-size: cover;
+  padding: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.mdl-card__title-text {
+  font-size: 30px;
+}
+.mdl-layout .mdl-layout__content {
+  padding-top: 75px;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mdl-card.faq-card{
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+img.snap{
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.mdl-data-table{
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10%
+}
+
+.grade-breakdown{
+  margin: 0 auto;
+}
+
+.drawer-header{
+	padding: 2em;
+}
+
+.canvas-component{
+	width: 300;
+	height: 300
+}
