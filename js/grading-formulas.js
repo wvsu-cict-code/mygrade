@@ -1,6 +1,7 @@
 //c paramater == components
 var fx = {
   it227: function(c) {
+
     //Midterm
     var lexList_m = [c[2], c[3], c[4]], // Lab Exercises
     lxmList_m = [c[1]], // Lab Exam
@@ -45,7 +46,6 @@ var fx = {
       finalterm: fgScore,
       general: ggScore
     }
-
   },
   it227_guide: function() {
     var d = [
@@ -93,6 +93,57 @@ var fx = {
         name: "Major Project",
         value: 60,
         type: "f"
+      }
+    ];
+    return d;
+  },
+  it238: function(c) {
+
+    //Midterm
+    var lexList_m = [c[2], c[3], c[4],c[5],c[6]], // Lab Exercises
+    lxmList_m = [c[1]], // Lab Exam
+    mjrexmList_m = [c[7]]; // Major Exam
+
+    var mgComponents = [],
+    mgScore = 0;
+
+    mgComponents.push(sEquiv(c[0].value, c[0].total, 0.15));
+    mgComponents.push(sEquiv(cSum(lxmList_m), cMax(lxmList_m), 0.15));
+    mgComponents.push(sEquiv(cSum(lexList_m), cMax(lexList_m), 0.30));
+    mgComponents.push(sEquiv(cSum(mjrexmList_m), cMax(mjrexmList_m), 0.40));
+
+    mgComponents.forEach(function(val){
+      mgScore += parseFloat(val)
+    });
+
+    //general
+    var ggScore = mgScore.toFixed(2);
+
+    return {
+      general: mgScore
+    }
+  },
+  it238_guide: function() {
+    var d = [
+      {
+        name: "Class Standing",
+        value: 15,
+        type: "m"
+      },
+      {
+        name: "Lab Exams",
+        value: 15,
+        type: "m"
+      },
+      {
+        name: "Lab Exercises",
+        value: 30,
+        type: "m"
+      },
+      {
+        name: "Major Exam",
+        value: 40,
+        type: "m"
       }
     ];
     return d;

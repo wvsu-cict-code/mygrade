@@ -169,12 +169,12 @@ var app = {
         drawChartMidtermGuide();
       }
       if (dataSetFinaltermComponents.length > 1) {
+        $(".coming-soon").hide();
         drawChartFinaltermComponents();
         drawChartFinaltermGuide();
       }
-      if(dataSetMidtermComponents.length > 1 && dataSetFinaltermComponents.length > 1){
-        drawGeneralGradeChart();
-      }
+
+      drawGeneralGradeChart();
     }
 
     function drawChartMidtermComponents() {
@@ -242,7 +242,7 @@ var app = {
 
     function drawChartMidtermGuide(){
         var data = google.visualization.arrayToDataTable(dataSetMidtermGuide),
-        colorStyle = randomColorStyle().slice(0,dataSetFinaltermGuide.length),
+        colorStyle = randomColorStyle().slice(0,dataSetMidtermGuide.length),
         options = {
           pieHole: 0.4,
           width: 460,
@@ -279,9 +279,13 @@ var app = {
     $("#ggEquiv").html(ggEquiv(result.general));
     $("#ggDesc").html(ggDesc(result.general));
 
-    generalGradeComponents.push(['Midterm',result.midterm]);
-    generalGradeComponents.push(['Finals',result.finalterm]);
-    generalGradeComponents.push(['General',result.general]);
+    if(Object.keys(result).length>1){
+      generalGradeComponents.push(['Midterm',result.midterm]);
+      generalGradeComponents.push(['Finals',result.finalterm]);
+      generalGradeComponents.push(['General',result.general]);
+    }else{
+      generalGradeComponents.push(['General',result.general]);
+    };
 
     function drawGeneralGradeChart(){
       {
